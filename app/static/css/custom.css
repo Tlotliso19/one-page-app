@@ -1,0 +1,469 @@
+
+/*===============================================fonts import=================================*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+
+
+/* ==========================starting first by removing any implicit padding and margin========================== */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* ==========================setting up the root variables========================== */
+
+:root {
+    --color-white:white;
+    --color-primary:#3A6D8C;         /* A darker blue */
+    --color-secondary:#81BFDA;       /* A light blue */
+    --color-tertiary:#FFD700;        /* A dark blu color */
+    --color-light:#f4f4f4;           /* A light grey color */
+    --color-black:black;              /* A black color */
+
+
+    /* setting up the font sizes */
+    --font-small:20px;
+    --font-medium:32px;
+    --font-large:44px;
+
+
+    --container-width-lg:80%;
+
+    --container-width-md:90%;
+    --container-width-sm:94%;
+
+    --transition: all 400ms ease;
+    --button-hover:#0A3981;
+}
+
+/* ==========================setting up the global styles========================== */
+img {
+    border-radius: 3%;
+}
+
+body{
+    font-family:"roboto";
+line-height: 1.7;
+
+background-color: var(--color-light); }
+
+.container {
+    width: var(--container-width-lg);
+    margin:0 auto;
+
+}
+
+section {
+    padding: 6rem 0;
+}
+/* ==========================nav bar========================== */
+nav {
+    position: sticky; /* Make it sticky */
+    top: 0; /* Keep it at the top */
+   
+    color: var(--color-white);
+    padding: 1rem 1rem;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+   
+}
+#navbarNav{
+    
+    width: 48%;
+}
+
+.navbar__list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    
+   }
+
+   .navbar-container div a{
+    font-size: var(--font-medium);
+    color: var(--color-black);
+    font-weight: 300;
+
+   }/****body and html+=========*/
+   html{
+    background:red;
+    height: fit-content;
+   }
+
+   /* ==========================about section========================== */
+
+   .about_section{
+        
+    display: grid;  /* Makes the container a grid container */
+    grid-template-columns: 1fr 1fr; /* Two columns of equal width */
+   }
+
+   .about_section .left{
+    padding: 5rem 2rem;
+    display: flex;                    /* Makes the container a flex container */
+    flex-direction: column;           /* Stacks items vertically */
+    justify-content: space-evenly;    /* Distributes items evenly with equal space between them */
+    height: 80%;                 /* 80% of the height of the parent container */    
+   }
+
+   .about_section .left h1{
+    font-size: var(--font-large);   /* Sets the font size */
+   
+
+   }
+   .about_section .left h3{
+    font-size: var(--font-small); /* Sets the font size */
+    width: 80%; /* 80% of the width of the parent container */
+    text-align: justify; /* Justifies the text */
+    font-weight: normal; /* Sets the font weight */
+   }
+   .button_container{
+    
+    display: flex; /* Makes the container a flex container */
+    justify-content: center;
+    align-items: center; /* Centers items vertically */
+   }
+
+   .about_section .left button{ /* Styles the button */
+    width: 12rem;
+    height: 4rem;
+    justify-self: center;
+    border-radius: 22px;
+    font-size: var(--font-small);
+    border: 1px solid var(--color-black);
+   }
+
+   .about_section .left button:hover {
+    background-color:var(--button-hover) ;  /* Darken the button color on hover */
+}
+
+.stats_container{
+    background: var(--color-primary);
+    width: 34%;
+    height: 12rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);/* Two columns of equal width */
+    position: absolute;        /* Position the overlay relative to the container */
+    top: 58%;                  /* Position the overlay 50% from the top */
+    left: 46%;                 /* Position the overlay 50% from the left */
+    
+}
+
+
+
+.stat H1{
+font-size: var(--font-large);
+color: var(--color-white);
+
+}
+
+
+.right{
+    height: 654px;
+}
+
+
+.image_container{
+
+width: 100%;               /* Make image take full container width */
+height: 100%;              /* Make image take full container height */
+object-fit: cover;         /* Ensures the image fills the container while preserving aspect ratio */
+}
+
+
+/*=============================== data portfolio projects========================*/
+
+.portfolio_section h1, .portfolio_section h3 {
+    text-align: center; /* Centers the text horizontally */
+    margin: 2rem 0 ; /* Adds margin to the top and bottom of the text */
+}
+
+.portfolio_section h1{
+    font-size: var(--font-medium); /* Sets the font size */
+}
+
+.portfolio_section h3{
+    font-size: var(--font-small); /* Sets the font size */
+    font-weight: normal; /* Sets the font weight */
+}
+
+.projects{
+    display: grid; /* Makes the container a grid container */
+    grid-template-columns: repeat(2, 1fr); /* Three columns of equal width */
+}
+.project h2{
+    font-size: var(--font-medium); /* Sets the font size */
+    margin: 1rem 0; /* Adds margin to the top and bottom of the text */
+    text-align: center; /* Centers the text horizontally */
+
+}
+
+.project h3{
+
+    font-size: var(--font-small); /* Sets the font size */
+    font-weight: normal; /* Sets the font weight */
+    text-align: center; /* Centers the text horizontally */
+   
+}
+
+.project h3 button{
+    width: 8rem; /* Sets the width of the button */
+    height: 2rem; /* Sets the height of the button */
+    border-radius: 20px; /* Rounds the corners of the button */
+    font-size: var(--font-small); /* Sets the font size */
+    margin: 1rem 0; /* Adds margin to the top and bottom of the button */
+    background: var(--color-secondary);
+    color: var(--color-light);
+}
+
+.project h3 button:hover{
+    background-color:var(--button-hover) ; 
+}
+
+
+/*=============================== data and scripts section========================*/
+
+.data_and_scripts_section h1, .data_and_scripts_section h3 {
+    text-align: center; /* Centers the text horizontally */
+    margin: 2rem 0 ; /* Adds margin to the top and bottom of the text */
+}
+
+
+/*================================================= data insights section ====================== */
+
+.data_insights h1, .data_insights h3 {
+    text-align: center; /* Centers the text horizontally */
+    margin: 2rem 0 ; /* Adds margin to the top and bottom of the text */
+}
+
+.data_insights h1{
+    font-size: var(--font-large);
+}
+.data_insights h3 {
+    font-weight: var(--font-medium);
+    font-weight: normal;}
+
+.insight{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem 0;
+}
+
+.insight_description {
+    text-align: left !important;; /* Aligns the text to the left */
+    background: #00CCDD; /* Sets the background color to teal */
+}
+
+/*=======================================================  available services ==================*/
+.available_services_section{
+    width: var(--container-width-lg);
+    margin:0 auto;
+    height: 90%;
+}
+.available_services_section h1, .available_services_section h3{
+    text-align: center; /* Centers the text horizontally */
+    margin-top: 2rem  0; /* Adds margin to the top of th text */
+    
+}
+.available_services_section h1{
+    font-size: var(--font-large);
+}
+
+.available_services_section h3{
+    font-weight: var(--font-medium);
+    font-weight: normal;
+   
+}
+.portfolio_of_evidence{
+ 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+}
+
+
+
+    .evidence img {
+        width: 100%; /* Ensure the image scales to the grid item */
+        height: auto; /* Maintain the aspect ratio */
+        object-fit: cover; /* Make the image fill the container without distorting */
+      }
+
+/*.portfolio_of_evidence .evidence:nth-child(2n+2) {
+    background-color: lightblue;}  Color the second column */
+.evidence{
+    position: relative;
+
+}
+  
+
+.evidence_description{
+    background-color: var(--color-white);
+    position: absolute;        /* Position the overlay relative to the container */
+    top: 78%;                  /* Position the overlay 50% from the top */
+     /*left: 46%;                 Position the overlay 50% from the left */
+     width: 90%;   
+     height: 15rem;
+     margin-left: 4vh; 
+              
+  }
+
+.available_services_section_container{
+    background:var(--color-secondary);
+    width: 100%;
+    height:50rem;
+    
+    
+}
+
+/*==============================================contant section ================================*/
+
+.get_in_touch_section{
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+
+.info h1,.info h2{
+    text-align: left; /* Centers the text horizontally */
+    margin-top: 2rem  0; /* Adds margin to the top of th text */
+    
+}
+
+.info h1{
+    font-size: var(--font-large);
+}
+
+.info h2{
+    font-size: var(--font-medium);
+    font-weight: 300;
+}
+
+.info h3{
+    font-size: var(--font-small);
+    font-weight: normal;
+}
+
+
+
+
+
+.imail_form label{
+    font-size: var(--font-small);
+    font-weight: normal;
+}
+
+.imail_form form{
+    display: flex;
+    flex-direction: column;
+}
+
+.imail_form form input, .imail_form form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 22px;
+    font-size: 1rem;
+    color: #333;
+    box-sizing: border-box;  /* Ensures padding is included in width */
+    transition: border-color 0.3s ease;
+}
+
+.imail_form form input:focus,.imail_form form textarea:focus {
+    border-color: var(--color-primary);  /* Change border color when focused */
+    outline: none;  /* Remove default focus outline */
+}
+
+.imail_form form textarea {
+    resize: vertical;  /* Allow vertical resizing only */
+}
+
+.submit_btn {
+    width: 12rem;
+    height: 4rem;
+    justify-self: center;
+    margin-top: 1rem;
+    border-radius: 22px;
+    font-size: var(--font-small);
+    color: var(--color-white);
+    border: 1px solid var(--color-black);
+    background: var(--color-primary);
+   }
+
+
+.submit_btn:hover {
+    background-color:var(--button-hover) ;  /* Darken the button color on hover */
+}
+
+.submit_btn:active {
+    background-color: #004080;  /* Even darker when the button is clicked */
+}
+/***************************footer section *****************************/
+footer{
+
+    background:var(--color-primary);
+    
+    margin: 0;  /* Remove any margin */
+
+  
+       
+}
+
+.footer_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  margin: 0 auto;
+    height: 1%;
+}
+
+.footer_container h1,.footer_container h2, .footer_container h3{
+    
+    color: var(--color-white);
+}
+
+.footer_container h3{
+    font-size: var(--font-small);
+    font-weight: normal;}
+
+.right form label{
+    font-size: var(--font-small);
+    font-weight: normal;
+color: var(--color-white);}
+    
+
+.right form input{
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 22px;
+        font-size: 1rem;
+        color: #333;
+        box-sizing: border-box;  /* Ensures padding is included in width */
+        transition: border-color 0.3s ease;
+    }
+.right form input{
+    border-color: var(--color-primary);  /* Change border color when focused */
+    outline: none;  /* Remove default focus outline */
+}
+.copy_right{
+    font-size: var(--font-large);
+    color:var(--color-white);
+}
+.left,.center,.right{
+   
+    height: fit-content;
+}

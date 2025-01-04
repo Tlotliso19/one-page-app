@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Single PAGE</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Custom.css') }}">
+    
+
+
+    {% include 'navbar.html' %}
+  </head>
+
+  <body>
+   
+<section class="container" id="about">
+
+  <div class="about_section"> 
+<div class="left"> 
+  <h1>Your Trusted Data <br> Analyst Partner</h1>
+  <h3>Welcome to Data Solutions, where we showcase our expertise in data analysis
+     through a comprehensive portfolio. Explore our projects and see how we can 
+     elevate your data-driven decisions.</h3>
+     <div class="button_container"><a href=""><button>contact</button></a></div>
+
+</div>
+<div class="right">
+<div class="image_container"> <img src="{{ url_for('static', filename='images/about.avif') }}" alt="about"> </div>
+<div class="stats_container"> <div class="stat"><h1>150+</h1>
+<h3>Proven Results</h3></div> 
+<div class="stat"><h1>15</h1><h3>Client Satisfaction Guaranteed</h3>
+</div>
+
+</div>
+  </div>
+</section>
+
+
+<section class="container" id="portfolio">
+<div class="portfolio_section">  
+
+  <h1>portfolio</h1>
+  <h3>Showcasing my data analysis projects and freelance achievements.</h3>
+  <div class="projects">
+<div class="project">   <img src="{{ url_for('static', filename='images/data_insights1.avif') }}" alt="about">
+  <h2> Data Insights</h2>
+   <h3> Transforming data into actionable insights for clients.     
+    <button> read more</button></h3>  </div>
+
+    <div class="project">   <img src="{{ url_for('static', filename='images/data_insights1.avif') }}" alt="about">
+      <h2> Data Insights</h2>
+       <h3> Transforming data into actionable insights for clients.     
+        <button> read more</button></h3>  </div>
+
+<div class="project">   <img src="{{ url_for('static', filename='images/data_insights1.avif') }}" alt="about">
+    <h2> Data Insights</h2>
+    <h3> Transforming data into actionable insights for clients.     
+      <button> read more</button></h3>  </div>
+
+<div class="project">   <img src="{{ url_for('static', filename='images/data_insights2.avif') }}" alt="about">
+  <h2> Visual Analytics</h2>
+    <h3> Creating compelling visualizations to communicate data effectively.     
+    <button> read more</button></h3>  </div>
+
+  <div class="project">   <img src="{{ url_for('static', filename='images/data_insights3.avif') }}" alt="about">
+    <h2> Predictive Modeling</h2>
+    <h3> Building models to forecast trends and outcomes accurately.    
+    <button> read more</button></h3>  </div>
+
+  <div class="project">   <img src="{{ url_for('static', filename='images/data_insights4.avif') }}" alt="about">
+    <h2>Data Strategy</h2>
+    <h3> Developing strategies to leverage data for business growth.     
+    <button> read more</button></h3>  </div>
+
+
+  </div>
+</div>
+
+
+</section>
+
+
+<section class="container" id="data_and_scripts">
+  <div class="data_and_scripts_section">
+<h1>data and scripts</h1>
+<h3>Explore my data analysis project, SQL scripts and Python notebooks to see how I can help you with your data needs.</h3>
+<div class="scrolls">
+
+  <div class="scroll data_preview">   <div class="datafram">  </div></div>
+  <div class="scroll python_notebook"> <div class="notebooks"></div></div>
+  <div class="scrollsql_scripts"> <div class="sql"></div></div>
+</div>
+
+  </div>
+</section>
+
+
+
+<section class="container" id="data_insights">
+  <div class="data_insights"> 
+    <h1>data insights</h1>
+    <h3>Showcasing impactful projects that highlight my data analysis skills.</h3>
+  <div class="insight">    
+    <div class="insight_image">   <img src="{{ url_for('static', filename='images/data_insights1.avif') }}" alt="about"></div> 
+    <div class="insight_description"> <h2>Market Analysis</h2> 
+    <h3>Conducted a comprehensive market analysis to identify trends and opportunities, 
+      providing actionable insights that helped clients make informed decisions and improve their business strategies effectively.</h3>     </div>
+  </div>
+
+  <div class="insight">    
+    <div class="insight_image">   <img src="{{ url_for('static', filename='images/data_insights4.avif') }}" alt="about"></div> 
+    <div class="insight_description"> <h2>Data Visualization</h2> 
+    <h3>Created engaging data visualizations that transformed complex datasets into clear,
+       actionable insights, enabling clients to understand their data better and make data-driven decisions for their projects.</h3>     </div>
+  </div>
+</section>
+
+
+<section class="container available_services_section_container" id="services">
+  <div class="available_services_section"> <h1>Data Analysis Services</h1>
+  <h3>Offering expert data analysis to help businesses make informed decisions and drive growth effectively.</h3>
+
+<div class="portfolio_of_evidence">
+  <div class="evidence">
+
+  <img src="{{ url_for('static', filename='images/Services2.avif') }}" alt="about"><div class="evidence_description">
+  <h2>  Custom Reporting Solutions</h2>
+  <h3>Creating customized reports that visualize data trends and support strategic planning for your organization.</h3>
+</div></div>
+<div class="evidence">
+  <img src="{{ url_for('static', filename='images/Services2.avif') }}" alt="about"><div class="evidence_description">
+    <h2> Freelance Data Insights</h2>
+    <h3>Providing actionable insights through comprehensive data analysis tailored to your specific business needs</h3>
+  </div>
+
+</div>
+</div>
+</div>
+
+</section>
+
+<section class="container" id="contact">
+  <div class="get_in_touch_section">
+    <div class="info">
+      <h1>Get in Touch</h1>
+      <h3>Contact me for data analysis projects or freelance opportunities. 
+        I look forward to collaborating and helping you with your data needs.</h3>
+        <h2>Reach</h2>
+        <h3>1234567890</h3>
+        <h2>Connect</h2>
+        <h3>info@datasyntax.com</h3>
+    </div>
+
+    <div class="imail_form"> <form action="">
+
+      <label for=""> your full name</label>
+      <input type="text" name="" id="">
+      <label for=""> Your Email Address*</label>
+      <input type="email" name="" id="">
+      <label for="">Your Message*</label>\
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+      <button type="submit" class="submit_btn">Send your message</button>
+    </form></div>
+  </div>
+</section>
+
+<script src="{{ url_for('static', filename='js/start.js') }}"></script>
+
+
+
+<footer>
+  <div class="container footer_container">  
+  
+  
+    <div class="left"> <h1>
+      Portfolio Webpage</h1>
+    <h3>Showcasing my work as a data analyst.</h3> 
+    <h2>My Socials</h2>
+    
+  </div> 
+  
+    <div class="center"><h1>Contact details</h1>
+    <h3>+1234567890</h3>
+  <h3>info@datasolutions.com</h3></div> 
+  
+    <div class="right"> 
+      <h1>Subscribe to news letter</h1>
+      <form action="">
+        <label for="">Your Email Address</label>
+        <input type="email" name="" id="">
+        <button type="submit"  class="submit_btn">Send your message</button>
+      </form>
+    
+    
+    </div>
+  
+  </div>
+  <h1 class="copy_right">&copy; 2025 Data Solutions</h1>
+  
+</footer>
+
+  </body>
+
+</html>

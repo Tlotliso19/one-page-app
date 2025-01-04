@@ -1,0 +1,91 @@
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Data Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h2>Product Data</h2>
+
+    <!-- Table Structure -->
+    <table id="product-table">
+        <thead>
+            <tr>
+                <th>Product ID</th>
+                <th>Product</th>
+                <th>Product Category</th>
+                <th>Description</th>
+                <th>Retail Price</th>
+                <th>Wholesale Price</th>
+                <th>Product Type</th>
+                <th>Promo</th>
+                <th>Tax Exempt</th>
+                <th>Unit of Measure</th>
+                <th>New Product</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data rows will be inserted here by JavaScript -->
+        </tbody>
+    </table>
+
+    <script>
+        // Fetch the data from the Flask API
+        fetch('http://127.0.0.1:5000/data')
+            .then(response => response.json())  // Parse the response to JSON
+            .then(data => {
+                const tableBody = document.querySelector("#product-table tbody");
+
+                // Loop through the data and create rows
+                data.forEach(product => {
+                    const row = document.createElement("tr");
+
+                    // Create cells for each product attribute
+                    const cells = [
+                        product.product_id,
+                        product.product,
+                        product.product_category,
+                        product.product_description,
+                        product.current_retail_price,
+                        product.current_wholesale_price,
+                        product.product_type,
+                        product.promo_yn,
+                        product.tax_exempt_yn,
+                        product.unit_of_measure,
+                        product.new_product_yn
+                    ];
+
+                    // Append each cell to the row
+                    cells.forEach(cellData => {
+                        const cell = document.createElement("td");
+                        cell.textContent = cellData;
+                        row.appendChild(cell);
+                    });
+
+                    // Append the row to the table body
+                    tableBody.appendChild(row);
+                });
+            })
+            .catch(error => console.error('Error fetching data:', error));  // Handle any errors
+    </script>
+</body>
+</html>
+
+       
