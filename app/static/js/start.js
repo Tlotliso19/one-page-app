@@ -1,1 +1,1 @@
-//alert("hell")
+alert("hell")
