@@ -237,10 +237,65 @@ object-fit: cover;         /* Ensures the image fills the container while preser
 
 /*=============================== data and scripts section========================*/
 
-.data_and_scripts_section h1, .data_and_scripts_section h3 {
+.data_and_scripts_section_info h1, .data_and_scripts_section_info h3 {
     text-align: center; /* Centers the text horizontally */
     margin: 2rem 0 ; /* Adds margin to the top and bottom of the text */
+   
 }
+
+.data_and_scripts_section_info h1{
+    font-size: var(--font-large);
+}
+.data_and_scripts_section_info h3 {
+    font-size: var(--font-medium);
+    font-weight:normal;
+    margin-bottom: 4rem; /* Adds margin to the bottom of the text */
+}
+
+
+.scroll h1 {
+        font-size: var(--font-small);
+        font-weight:normal;
+        margin: 2rem auto;}
+.scroll p{
+    width: 90%; /* Sets the width of the paragraph to 90% of its parent container */
+    text-align: justify; /* Justifies the text */
+}
+.scrolls{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns of equal width */
+    gap: 2rem; /* Adds gap between grid items */
+    width: fit-content;
+}
+.scroll{
+    width: fit-content; /* Ensure the image scales to the grid item */
+    display: grid; /* Makes the container a grid container */
+    grid-template-rows: repeat(3, 1fr); /* Three rows of equal height */
+    gap: 1rem; /* Adds gap between grid items */
+    
+}
+.project__container {
+    background: rgba(217, 234, 253, 0.6); /* Light blue with 50% opacity */
+}
+
+
+
+
+
+.dataframe img,.notebook img,.SQL img{
+    
+    width: 90%;
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: cover; /* Make the image fill the container without distorting */
+  }
+
+
+
+
+
+
+
 
 
 /*================================================= data insights section ====================== */
@@ -263,9 +318,9 @@ object-fit: cover;         /* Ensures the image fills the container while preser
     margin: 1rem 0;
 }
 
-.insight_description {
+.insight_description h3{
     text-align: left !important;; /* Aligns the text to the left */
-    background: #00CCDD; /* Sets the background color to teal */
+
 }
 
 /*=======================================================  available services ==================*/
@@ -324,14 +379,14 @@ object-fit: cover;         /* Ensures the image fills the container while preser
   }
 
 .available_services_section_container{
-    background:var(--color-secondary);
+    background: rgba(217, 234, 253, 0.95); /* Light blue with 50% opacity */
     width: 100%;
     height:50rem;
     
     
 }
 
-/*==============================================contant section ================================*/
+/*==============================================contact section ================================*/
 
 .get_in_touch_section{
 display: grid;
@@ -401,7 +456,7 @@ grid-template-columns: 1fr 1fr;
     font-size: var(--font-small);
     color: var(--color-white);
     border: 1px solid var(--color-black);
-    background: var(--color-primary);
+    background:var(--color-primary); 
    }
 
 

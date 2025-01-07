@@ -82,13 +82,111 @@
 
 <section class="container" id="data_and_scripts">
   <div class="data_and_scripts_section">
+    <div class="data_and_scripts_section_info">
 <h1>data and scripts</h1>
 <h3>Explore my data analysis project, SQL scripts and Python notebooks to see how I can help you with your data needs.</h3>
+</div>
 <div class="scrolls">
 
-  <div class="scroll data_preview">   <div class="datafram">  </div></div>
-  <div class="scroll python_notebook"> <div class="notebooks"></div></div>
-  <div class="scrollsql_scripts"> <div class="sql"></div></div>
+  <div class="scroll data_preview">
+    <div class="project__container">
+    <div class="dataframe">   <img src="{{ url_for('static', filename='images/data_insights4.avif') }}" alt="about"></div> 
+    <div class="dataframe_info"> 
+      <h1>Dataframe from Tescos electronics stores sales</h1> 
+      <p>Tescos electronics stores is a global online and retail store that sales electronics all over europe. its sales director was interested
+        in the relationship between the sales and the weather in the region. 
+        I was able to help him with this analysis and he was very happy with the results.
+      </p>
+    </div></div>
+    <div class="project__container">
+    <div class="dataframe">   <img src="{{ url_for('static', filename='images/data_insights4.avif') }}" alt="about"></div> 
+    <div class="dataframe_info"> 
+      <h1>Dataframe from Hyper taste coffee shop</h1> 
+      <p>Having worked with the sales excutive from Hyper taste coffee shop to identify local trends in the Market.
+        and how to improve their sales and marketing strategies. I was able to help him with this analysis and he was very happy with the results.
+        The focus on the demand patterns and customer preferences was key to the analysis.
+      </p>
+    </div></div>
+    <div class="project__container">
+    <div class="dataframe">   <img src="{{ url_for('static', filename='images/data_insights4.avif') }}" alt="about"></div> 
+    <div class="dataframe_info"> 
+      <h1>Dataframe from Movies trends datasets</h1> 
+      <p>Last year I collected movies data of all available gengres. After cleaning and wangling the data. I performed explorative analysis
+        the target was to identify the most popular movies and the trends in the movie industry. Together with cast cobinations that were 
+        most appreciated by the audience. I was able to build a Predictive model that would based on the 
+        upcoming movie cast and crew, predict the success of the movie.  
+      </p>
+    </div> </div>
+  
+  </div>
+
+
+  <div class="scroll python_notebook"> 
+    <div class="project__container">
+    <div class="notebook">   <img src="{{ url_for('static', filename='images/data_insights4.avif') }}" alt="about"></div> 
+    <div class="notebook_info"> 
+      <h1>Notebook from Tescos electronics stores sales</h1> 
+      <p>The dataset comprised of nine defferent files in variable formats(csv,json,excel).
+         The first step was to read each file and understand its contents after which I loaded the data into a pandas dataframe from initia data cleaning.
+        using string manulation among other to handle compound columns</p>
+    </div></div>
+  
+    <div class="project__container">
+    <div class="notebook">   <img src="{{ url_for('static', filename='images/data_insights4.avif') }}" alt="about"></div> 
+    <div class="notebook_info"> 
+      <h1>Notebook from Hyper taste coffee shop</h1> 
+      <p>Hyper taste coffee shop dataset was messy with duplicates and missing values.also it was made of one excel file. python notebook was used 
+        together with pandas and numpy to clean the data and prepare it for analysis. 
+        once the data was cleaned I was able to perform analysis and visualizations.
+      </p>
+    </div></div>
+<div class="project__container">
+    <div class="notebook">   <img src="{{ url_for('static', filename='images/data_insights4.avif') }}" alt="about"></div> 
+    <div class="notebook_info"> 
+      <h1>Notebook from Movies trends datasets</h1> 
+      <p>Movies trends project was tricky as mostly it contained strings as opposed numeric quantities. hoverever after the initial cleaning
+        a series of pivot tables and group by functions were used to extract the most important information. and with this  information I used 
+        a series of hot encodings to extract the similarities and differences data points. lastly I was able to
+         build a predictive model that would predict the success of the movie based on the cast and crew.
+
+      </p>
+    </div></div>
+
+
+  </div>
+
+
+  <div class="scroll sql_scripts"> 
+    <div class="project__container">
+    <div class="SQL">   <img src="{{ url_for('static', filename='images/data_insights4.avif') }}" alt="about"></div> 
+    <div class="SQL_info"> 
+      <h1>SQL from Tescos electronics stores sales</h1> 
+      <p>In an attempt to understand the underlying statistical properties of the data and also its referencial integrity. 
+        I loaded the data into a relational database and using a series of CTE and views I created a master data source with was easy for vidualising 
+      </p>
+    </div> </div>
+    <div class="project__container">
+    <div class="SQL">   <img src="{{ url_for('static', filename='images/data_insights4.avif') }}" alt="about"></div> 
+    <div class="SQL_info"> 
+      <h1>SQL from  Hyper taste coffee shop</h1> 
+      <p>In  Hyper taste coffee shop SQL was used mostly to handle missing values and using roll number function and other functions 
+        to handle data duplicates. also the data was cleaned and prepared for analysis.
+      </p>
+    </div> </div>
+
+    <div class="project__container">
+    <div class="SQL">   <img src="{{ url_for('static', filename='images/data_insights4.avif') }}" alt="about"></div> 
+    <div class="SQL_info"> 
+      <h1>SQL from Movies trends datasets</h1> 
+      <p>Movies trends datasets was loaded in defferent tables by gengre and once this was done it was cleaned and referencial integrity established
+        by using foreign keys and primary keys with the stars and directors tables. also linking to the financials table for the financial of the movies
+        after all this was done vector embedings were applied to the database  for similarity searches.
+      </p>
+    </div> </div>
+
+
+
+  </div>
 </div>
 
   </div>
@@ -143,7 +241,7 @@
   <div class="get_in_touch_section">
     <div class="info">
       <h1>Get in Touch</h1>
-      <h3>Contact me for data analysis projects or freelance opportunities. 
+      <h3>Contact me for data analysis projects or freelance opportunities. <br>
         I look forward to collaborating and helping you with your data needs.</h3>
         <h2>Reach</h2>
         <h3>1234567890</h3>
