@@ -66,9 +66,12 @@ section {
     padding: 6rem 0;
 }
 /*******************************icons*****************************/
-.icons i{
-   display: none; 
+@media (min-width: 1599px) {
+    .icons i {
+        display: none; 
+    }
 }
+
 
 /* ==========================nav bar========================== */
 
@@ -547,18 +550,49 @@ color: var(--color-white);}
 }
 /****************************************************adjusting contnt bas on device size*********************************************/
 /********************************starting with tablts****************************************************/
-@media (max-width: 768px) {
-#navbar{
-    display:none;
+@media (max-width:  1600px) {
+
+   /*  .navbar-container >:not(.nav_logos a) *:not(.nav_logos .icons i) {
+        display: none; Hide all elements except anchor tags inside .nav_logos 
+    } */
+     nav{
+        width: var(--container-width-md);
+        margin:0 auto;
+     }
+   
+
+   
+    
+h1{
+    color: #0A3981;
+
 }
-   .nav__btn__icon{
+.nav_logos{
+    width: 100%;
+   
+   
+    display: flex;              /* Make the element a flex container */
+    justify-content: space-between;  /* Distribute items with space between */
+    align-items: center;        /* Align items vertically in the center */
+}
+.nav_logos a{
     display: inline;
+   
+}
+.nav_logos .icons .open{
+    display: inline;
+   
+    margin-right: 2rem;
+    align-self: right;
 }
 
-    .container{
-        width: var(--container-width-lg);
-    }
-    img{
-        width: 70%;
-    }
+.nav_logos .icons .close{
+    display: none;
+}
+
+
+/**************************************taloring th navbar to b vtical **************************/
+#navbarNav{
+    display: none;
+}
 }
