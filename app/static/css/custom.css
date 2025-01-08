@@ -573,7 +573,8 @@ h1{
    
     display: flex;              /* Make the element a flex container */
     justify-content: space-between;  /* Distribute items with space between */
-    align-items: center;        /* Align items vertically in the center */
+   
+    align-items: flex-start;   /* Align items to the top of the container */
 }
 .nav_logos a{
     display: inline;
@@ -591,8 +592,60 @@ h1{
 }
 
 
-/**************************************taloring th navbar to b vtical **************************/
-#navbarNav{
-    display: none;
+/**************************************taloring th navbar to b vtical *************************
+#navbarNav {
+    display: block;
+    width: 20%;
+}
+
+#navbarNav ul {
+
+
+    width: 100%;
+    display: block;
+    background: #004080;
+} 
+*/
+
+/**********************************going to pictures */
+
+img{
+    width: 90%;
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: cover; /* Make the image fill the container without distorting */
+}} 
+
+@media (max-width:  768px) {
+    .container{
+        width: var(--container-width-sm);
+    }
+    img{
+        width: 70%;
+        height: auto; /* Maintain the aspect ratio */
+        object-fit: cover; /* Make the image fill the container without distorting */
+    }
+
+    .about_section{
+        
+        display: grid;  /* Makes the container a grid container */
+        grid-template-columns: 1fr; /* Two columns of equal width */
+       }
+    .right .image_container{
+        align-items: center;
+    }
+    
+    .stats_container{
+    position: absolute;
+    width: 55%;
+    top: 137%;                  
+    left: 5%;  
+} 
+
+html{
+    overflow-x: hidden;
+}
+.projects{
+    display: flex;
+    
 }
 }

@@ -8,6 +8,10 @@
       <!-- Font Awesome CDN -->
      
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+       <!-- Swiper CSS -->
+  
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     
 
     {% include 'navbar.html' %}
@@ -47,36 +51,38 @@
 
   <h1>portfolio</h1>
   <h3>Showcasing my data analysis projects and freelance achievements.</h3>
-  <div class="projects">
-<div class="project">   <img src="{{ url_for('static', filename='images/data_insights1.avif') }}" alt="about">
+  <div class="swiper-container">
+  <div class="projects swiper-wrapper">
+<div class="project swiper-slide">   <img src="{{ url_for('static', filename='images/data_insights1.avif') }}" alt="about">
   <h2> Data Insights</h2>
    <h3> Transforming data into actionable insights for clients.     
     <button> read more</button></h3>  </div>
 
-    <div class="project">   <img src="{{ url_for('static', filename='images/data_insights1.avif') }}" alt="about">
+    <div class="project swiper-slide">   <img src="{{ url_for('static', filename='images/data_insights1.avif') }}" alt="about">
       <h2> Data Insights</h2>
        <h3> Transforming data into actionable insights for clients.     
         <button> read more</button></h3>  </div>
 
-<div class="project">   <img src="{{ url_for('static', filename='images/data_insights1.avif') }}" alt="about">
+<div class="project swiper-slide">   <img src="{{ url_for('static', filename='images/data_insights1.avif') }}" alt="about">
     <h2> Data Insights</h2>
     <h3> Transforming data into actionable insights for clients.     
       <button> read more</button></h3>  </div>
 
-<div class="project">   <img src="{{ url_for('static', filename='images/data_insights2.avif') }}" alt="about">
+<div class="project swiper-slide">   <img src="{{ url_for('static', filename='images/data_insights2.avif') }}" alt="about">
   <h2> Visual Analytics</h2>
     <h3> Creating compelling visualizations to communicate data effectively.     
     <button> read more</button></h3>  </div>
 
-  <div class="project">   <img src="{{ url_for('static', filename='images/data_insights3.avif') }}" alt="about">
+  <div class="project swiper-slide">   <img src="{{ url_for('static', filename='images/data_insights3.avif') }}" alt="about">
     <h2> Predictive Modeling</h2>
     <h3> Building models to forecast trends and outcomes accurately.    
     <button> read more</button></h3>  </div>
 
-  <div class="project">   <img src="{{ url_for('static', filename='images/data_insights4.avif') }}" alt="about">
+  <div class="project swiper-slide">   <img src="{{ url_for('static', filename='images/data_insights4.avif') }}" alt="about">
     <h2>Data Strategy</h2>
     <h3> Developing strategies to leverage data for business growth.     
-    <button> read more</button></h3>  </div>
+    <button> read more</button></h3>  </div> </div>
+    <div class="swiper-pagination"></div>
 
 
   </div>
@@ -269,6 +275,10 @@
 </section>
 <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
 <script src="{{ url_for('static', filename='js/start.js') }}"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+
 
 
 
