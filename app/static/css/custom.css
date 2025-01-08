@@ -74,12 +74,24 @@ nav {
     padding: 1rem 1rem;
 }
 
+
 .navbar-container{
     display: flex;
     justify-content:space-around;
     align-items: center;
    
 }
+#navbar{
+transition: var(--transition);
+}
+
+#navbar.scrolled {
+    background-color:var(--color-secondary); /* Dark color when scrolled */
+}
+
+
+
+
 #navbarNav{
     
     width: 48%;
@@ -272,7 +284,7 @@ object-fit: cover;         /* Ensures the image fills the container while preser
     width: fit-content; /* Ensure the image scales to the grid item */
     display: grid; /* Makes the container a grid container */
     grid-template-rows: repeat(3, 1fr); /* Three rows of equal height */
-    gap: 1rem; /* Adds gap between grid items */
+    gap: 2rem; /* Adds gap between grid items */
     
 }
 .project__container {
@@ -316,6 +328,9 @@ object-fit: cover;         /* Ensures the image fills the container while preser
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 1rem 0;
+}
+.insight_description{
+    background: #EFF3EA;
 }
 
 .insight_description h3{
@@ -521,4 +536,21 @@ color: var(--color-white);}
 .left,.center,.right{
    
     height: fit-content;
+}
+/****************************************************adjusting contnt bas on device size*********************************************/
+/********************************starting with tablts****************************************************/
+@media (max-width: 768px) {
+#navbar{
+    display:none;
+}
+   .nav__btn{
+    display: inline;
+}
+
+    .container{
+        width: var(--container-width-lg);
+    }
+    img{
+        width: 70%;
+    }
 }
