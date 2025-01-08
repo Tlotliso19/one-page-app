@@ -51,7 +51,7 @@ img {
 }
 
 body{
-    font-family:"roboto";
+font-family:"roboto";
 line-height: 1.7;
 
 background-color: var(--color-light); }
@@ -65,7 +65,15 @@ background-color: var(--color-light); }
 section {
     padding: 6rem 0;
 }
+/*******************************icons*****************************/
+.icons i{
+   display: none; 
+}
+
 /* ==========================nav bar========================== */
+
+
+
 nav {
     position: sticky; /* Make it sticky */
     top: 0; /* Keep it at the top */
@@ -543,7 +551,7 @@ color: var(--color-white);}
 #navbar{
     display:none;
 }
-   .nav__btn{
+   .nav__btn__icon{
     display: inline;
 }
 
